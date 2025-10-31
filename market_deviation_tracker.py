@@ -3,7 +3,7 @@ print("Please select your commodity")
 print("a. COFFEE")
 print("b. ORANGE_JUICE")
 print("c. CORN")
-choice = INPUT()
+choice = input()
 
 if choice == a:
     food = "COFFEE"
