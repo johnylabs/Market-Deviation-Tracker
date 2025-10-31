@@ -1,2 +1,4 @@
 # Market-Deviation-Tracker
-Tracks grocery store food price deviations so consumers can take advantage of market inefficencies.
+Food is expensive and people need help getting alerts on when to stock up on cheap food before a price increase at the store. The program will analyze API data from Alpha Vantage for deviations over time and notify the user via alerts when markets are pricing in an increase in cost, i.e., a farming crisis in Brazil meaning coffee will increase in cost so they will stock up. I found myself checking the markets after coffee increased in price at the store randomly. The user will not need to provide the data if they use the correct API. If they don’t, they’ll need to upload a CSV from their wanted source.
+
+I want to solve this problem because it not only helps me save on food but automates the process, the final goal is to have a notification system that helps users buy before price increases.
