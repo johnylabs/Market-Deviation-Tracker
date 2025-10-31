@@ -5,11 +5,11 @@ print("b. ORANGE_JUICE")
 print("c. CORN")
 choice = input()
 
-if choice == a:
+if choice == "a":
     food = "COFFEE"
-elif choice == b:
+elif choice == "b":
     food = "ORANGE_JUICE"
-elif choice == c:
+elif choice == "c":
     food = "CORN"
 else:
     print("A VALID OPTION WAS NOT SELECTED, DEFAULTING TO COFFEE")
