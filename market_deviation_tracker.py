@@ -1,6 +1,6 @@
 # USER IS ASKED WHAT FOOD THEY WANT TO MONITOR
 import yfinance as yf
-print("Please select your commodity")
+print("PLEASE SELECT YOUR COMMODITY")
 print("a. COFFEE")
 print("b. ORANGE_JUICE")
 print("c. CORN")
@@ -22,5 +22,14 @@ data = yf.download(food, period="5d", interval="1d")
 if not data.empty:
     latest = data["Close"].iloc[-1]
     print("Latest closing price:", latest)
+
+    yesterday = data["Close"].iloc[-2]
+    change = ((latest.iloc[0] - yesterday.iloc[0]) / yesterday.iloc[0]) * 100
+
+    if change > 5:
+        print("PRICE SENSITIVITY EVENT DETECTED")
+    else:
+        print("NO PRICE SENSITIVITY EVENT DETECTED")
+
 else:
     print("Could not get data, try again later")
