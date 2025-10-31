@@ -6,10 +6,10 @@ print("c. CORN")
 choice = INPUT()
 
 if choice == a:
-food = "COFFEE"
+    food = "COFFEE"
 elif choice == b:
-food = "ORANGE_JUICE"
+    food = "ORANGE_JUICE"
 elif choice == c:
-food = "CORN"
+    food = "CORN"
 else:
-print("A VALID OPTION WAS NOT SELECTED, DEFAULTING TO COFFEE")
+    print("A VALID OPTION WAS NOT SELECTED, DEFAULTING TO COFFEE")
