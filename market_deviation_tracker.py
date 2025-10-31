@@ -1,3 +1,4 @@
+# REQUIRES INSTALL YFINANCE!! IF RAN IN a good IDE like PyCharm it will prompt you to add the dependency after running!!
 # USER IS ASKED WHAT FOOD THEY WANT TO MONITOR
 import yfinance as yf
 print("PLEASE SELECT YOUR COMMODITY")
