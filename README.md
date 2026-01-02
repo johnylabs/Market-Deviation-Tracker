@@ -1,3 +1,40 @@
-Food is expensive and people need help getting alerts on when to stock up on cheap food before a price increase at the store. The program will analyze API data from ~~Alpha Vantage~~ Yahoo Finance for deviations over time and notify the user via alerts when markets are pricing in an increase in cost, i.e., a farming crisis in Brazil meaning coffee will increase in cost so they will stock up. I found myself checking the markets after coffee increased in price at the store randomly. The user will not need to provide the data if they use the correct API. If they don’t, they’ll need to upload a CSV from their wanted source.
+# Market Deviation Tracker
 
-I want to solve this problem because it not only helps me save on food but automates the process, the final goal is to have a notification system that helps users buy before price increases.
+A lightweight Python utility that detects short-term price deviations in commodity markets and triggers alerts when thresholds are exceeded.
+
+This project demonstrates **anomaly detection, threshold-based alerting, and signal vs noise reasoning**, using real market data.
+
+## What This Demonstrates
+
+- Python data ingestion and processing
+- Basic anomaly detection using percentage change
+- Clear decision logic (alert vs no alert)
+- Translating raw data into actionable signals
+
+This mirrors how alerts are generated and evaluated in security operations and monitoring systems.
+
+## How It Works
+
+1. Pulls recent price data using Yahoo Finance (via `yfinance`)
+2. Calculates day-over-day percentage change
+3. Compares change against a defined threshold
+4. Outputs an alert when a deviation is detected
+
+## Example Use Case
+
+- Detect abnormal price movements caused by supply shocks
+- Demonstrate alert logic similar to SOC detections
+- Prototype decision thresholds before automation
+
+## Repository Structure
+
+```text
+market-deviation-tracker/
+├── README.md
+├── market_deviation_tracker.py
+├── requirements.txt
+├── idea/
+│   └── initial-notes.md
+├── legacy_versions/
+│   └── previous-iterations.py
+└── CHANGELOG.md
